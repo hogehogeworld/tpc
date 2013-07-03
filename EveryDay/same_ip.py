@@ -4,7 +4,7 @@ from scapy.all import *
 #from sys import argv
 
 usage = "usage:%prog [option]"
-parse = OptionParser(usage,version='Vesion:2.1')
+parse = OptionParser(usage,version='Vesion:2.2')
 
 def checker(option,opt_str,value,parser):
     if os.path.isfile(value):
@@ -41,7 +41,7 @@ if not args:
 
 try:
     PACK = rdpcap(options.file)
-    s = options.s 
+    s = options.s if options.s is not None else "I"
 except TypeError:
     print "Try:python same_ip.py -h"
     exit()
