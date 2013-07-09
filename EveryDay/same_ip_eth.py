@@ -4,7 +4,7 @@ from scapy.all import *
 #from sys import argv
 
 usage = "usage:%prog [option]"
-parse = OptionParser(usage,version='Vesion:2.3')
+parse = OptionParser(usage,version='Vesion:2.4')
 
 def checker(option,opt_str,value,parser):
     if os.path.isfile(value):
