@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.25 scan initiated Sun Aug  4 23:00:10 2013 as: nmap -&#45;script=ALL -P0 -v -sV -O -p 1-65535 -oX 8_5.xml 192.168.1.4 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script=ALL -P0 -v -sV -O -p 1-65535 -oX 8_5.xml 192.168.1.4" start="1375671610" startstr="Sun Aug  4 23:00:10 2013" version="6.25" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1375671611"/>
+<taskend task="NSE" time="1375671651"/>
+<prescript><script id="broadcast-avahi-dos" output="&#xa;  Discovered hosts:&#xa;    192.168.1.4&#xa;  After NULL UDP avahi packet DoS (CVE-2011-1002).&#xa;  Hosts are all up (not vulnerable).&#xa;"/><script id="broadcast-dns-service-discovery" output="&#xa;  192.168.1.4&#xa;    22/tcp ssh&#xa;      model=MacBookPro8,1&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    22/tcp sftp-ssh&#xa;      model=MacBookPro8,1&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    548/tcp afpovertcp&#xa;      model=MacBookPro8,1&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    631/tcp ipp&#xa;      txtvers=1&#xa;      qtotal=1&#xa;      rp=printers/Canon_MG6100_series&#xa;      ty=Canon MG6100 series&#xa;      adminurl=https://nishimura-no-MacBook-Pro.local.:631/printers/Canon_MG6100_series&#xa;      note=\xE8\xA5\xBF\xE6\x9D\x91 \xE3\x81\xAE MacBook Pro&#xa;      priority=0&#xa;      product=(Canon MG6100 series)&#xa;      pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster&#xa;      UUID=acf1f401-3a8f-3224-5204-6fb748f5fd7c&#xa;      TLS=1.2&#xa;      Color=T&#xa;      Scan=T&#xa;      printer-state=3&#xa;      printer-type=0x480900E&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    631/tcp ipps&#xa;      txtvers=1&#xa;      qtotal=1&#xa;      rp=printers/Canon_MG6100_series&#xa;      ty=Canon MG6100 series&#xa;      adminurl=https://nishimura-no-MacBook-Pro.local.:631/printers/Canon_MG6100_series&#xa;      note=\xE8\xA5\xBF\xE6\x9D\x91 \xE3\x81\xAE MacBook Pro&#xa;      priority=0&#xa;      product=(Canon MG6100 series)&#xa;      pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster&#xa;      UUID=acf1f401-3a8f-3224-5204-6fb748f5fd7c&#xa;      TLS=1.2&#xa;      Color=T&#xa;      Scan=T&#xa;      printer-state=3&#xa;      printer-type=0x480900E&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    3031/tcp eppc&#xa;      model=MacBookPro8,1&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    3689/tcp home-sharing&#xa;      txtvers=1&#xa;      dmv=131081&#xa;      hQ=118&#xa;      MID=0x192CB7BF5F70C439&#xa;      Version=196619&#xa;      iTSh Version=196618&#xa;      PrVs=65538&#xa;      Machine Name=\xE8\xA5\xBF\xE6\x9D\x91 \xE7\xA4\xBC\xE6\x81\xA9 \xE3\x81\xAE\xE3\x83\xA9\xE3\x82\xA4\xE3\x83\x96\xE3\x83\xA9\xE3\x83\xAA&#xa;      OSsi=0x1F5&#xa;      hG=00000000-49d7-488a-9fd0-cbb71aee4161&#xa;      Database ID=669792FB3AAB7759&#xa;      Machine ID=57832D74F074&#xa;      hC=97f4612b-f1f3-4dd8-b924-a0318d6ed41e&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    5000/tcp MonoTouch&#xa;      model=MacBookPro8,1&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    5900/tcp rfb&#xa;      model=MacBookPro8,1&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;    49152/tcp odisk&#xa;      sys=waMA=40:6C:8F:04:A4:6C,adVF=0x200,adDT=0x3,adCC=1&#xa;      model=MacBookPro8,1&#xa;      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e&#xa;"/><script id="broadcast-eigrp-discovery" output="&#xa; ERROR: Couldn&apos;t get an A.S value."/><script id="broadcast-listener" output="&#xa;  ether&#xa;      ARP Request&#xa;        sender ip      sender mac         target ip&#xa;        192.168.1.102  64:80:99:4F:E4:AC  192.168.1.1&#xa;        192.168.1.16   68:94:23:87:D9:32  192.168.1.4&#xa;  udp&#xa;      Netbios&#xa;        ip             query&#xa;        192.168.1.102  WPAD           &#xa;      DropBox&#xa;        displayname  ip           port   version  host_int   namespaces&#xa;        536549527    192.168.1.4  17500  1.8      536549527  179064612&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip             server        domain&#xa;192.168.1.102  NISHIMURA-PC  WORKGROUP&#xa;"/><script id="broadcast-ping" output="&#xa;  IP: 192.168.1.4  MAC: 10:40:f3:95:4f:5e&#xa;  Use -&#45;script-args=newtargets to add the results as targets&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  192.168.1.1&#xa;      Server: POSIX, UPnP/1.0, Intel MicroStack/1.0.2126&#xd;&#xa;      Location: http://192.168.1.1:51234/wps_device.xml&#xd;&#xa;        Webserver: Unspecified, UPnP/1.0, Unspecified&#xa;        Name: WPS Access Point&#xa;        Manufacturer: NTTEAST/NTTWEST&#xa;        Model Name: PR-400KI&#xa;        Model Version: 00:25:36:50:BC:09&#xa;"/><script id="broadcast-wpad-discover" output="&#xa;  ERROR: Could not find WPAD using DNS/DHCP"/><script id="broadcast-wsdd-discover" output="&#xa;  Devices&#xa;    192.168.1.16&#xa;        Message id: 572eb1e9-2313-4c3a-ac3d-3f645ec7ed80&#xa;        Address: http://192.168.1.16:5357/86ad34d9-14aa-49b1-bd8e-f23d2b439e3c/&#xa;        Type: Device pub:Computer&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="http-icloud-findmyiphone" output="&#xa;  ERROR: No username or password was supplied"/><script id="http-icloud-sendmsg" output="&#xa;  ERROR: No username or password was supplied"/><script id="http-virustotal" output="&#xa;  ERROR: An API key is required in order to use this script (see description)"/><script id="lltd-discovery" output="&#xa;  192.168.1.1&#xa;    Hostname: PR-400KI&#xa;    Mac: 00:01:02:03:04:05 (3com)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/><script id="targets-ipv6-multicast-echo" output="&#xa;  IP: 2001:a450:2122:ca00:1240:f3ff:fe95:4f5e  MAC: 10:40:f3:95:4f:5e  IFACE: eth1&#xa;  IP: fe80::1240:f3ff:fe95:4f5e                MAC: 10:40:f3:95:4f:5e  IFACE: eth1&#xa;  IP: 2001:a450:2122:ca00:225:36ff:fe50:bc89   MAC: 00:25:36:50:bc:89  IFACE: eth1&#xa;  IP: fe80::225:36ff:fe50:bc89                 MAC: 00:25:36:50:bc:89  IFACE: eth1&#xa;  Use -&#45;script-args=newtargets to add the results as targets&#xa;"/><script id="targets-ipv6-multicast-invalid-dst" output="&#xa;  IP: 2001:a450:2122:ca00:1240:f3ff:fe95:4f5e  MAC: 10:40:f3:95:4f:5e  IFACE: eth1&#xa;  IP: fe80::1240:f3ff:fe95:4f5e                MAC: 10:40:f3:95:4f:5e  IFACE: eth1&#xa;  IP: 2001:a450:2122:ca00:225:36ff:fe50:bc89   MAC: 00:25:36:50:bc:89  IFACE: eth1&#xa;  IP: fe80::225:36ff:fe50:bc89                 MAC: 00:25:36:50:bc:89  IFACE: eth1&#xa;  Use -&#45;script-args=newtargets to add the results as targets&#xa;"/></prescript><taskbegin task="ARP Ping Scan" time="1375671651"/>
+<taskend task="ARP Ping Scan" time="1375671651" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1375671651"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1375671651"/>
+<taskbegin task="SYN Stealth Scan" time="1375671651"/>
+<taskprogress task="SYN Stealth Scan" time="1375671682" percent="4.97" remaining="594" etc="1375672275"/>
+<taskprogress task="SYN Stealth Scan" time="1375671775" percent="18.14" remaining="560" etc="1375672334"/>
+<taskprogress task="SYN Stealth Scan" time="1375671817" percent="24.12" remaining="523" etc="1375672339"/>
+<taskprogress task="SYN Stealth Scan" time="1375671856" percent="29.63" remaining="487" etc="1375672343"/>
+<taskprogress task="SYN Stealth Scan" time="1375671895" percent="35.13" remaining="451" etc="1375672346"/>
+<taskprogress task="SYN Stealth Scan" time="1375671931" percent="40.22" remaining="417" etc="1375672347"/>
+<taskprogress task="SYN Stealth Scan" time="1375671970" percent="45.73" remaining="379" etc="1375672349"/>
+<taskprogress task="SYN Stealth Scan" time="1375672006" percent="50.84" remaining="344" etc="1375672349"/>
+<taskprogress task="SYN Stealth Scan" time="1375672042" percent="55.95" remaining="308" etc="1375672350"/>
+<taskprogress task="SYN Stealth Scan" time="1375672078" percent="61.01" remaining="273" etc="1375672351"/>
+<taskprogress task="SYN Stealth Scan" time="1375672114" percent="66.09" remaining="238" etc="1375672352"/>
+<taskprogress task="SYN Stealth Scan" time="1375672150" percent="71.13" remaining="203" etc="1375672353"/>
+<taskprogress task="SYN Stealth Scan" time="1375672186" percent="76.21" remaining="168" etc="1375672353"/>
+<taskprogress task="SYN Stealth Scan" time="1375672222" percent="81.25" remaining="132" etc="1375672354"/>
+<taskprogress task="SYN Stealth Scan" time="1375672258" percent="86.35" remaining="96" etc="1375672354"/>
+<taskprogress task="SYN Stealth Scan" time="1375672294" percent="91.44" remaining="61" etc="1375672354"/>
+<taskend task="SYN Stealth Scan" time="1375672355" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1375672355"/>
+<taskend task="Service scan" time="1375672469" extrainfo="11 services on 1 host"/>
+<taskbegin task="NSE" time="1375672472"/>
+<taskprogress task="NSE" time="1375672503" percent="8.06" remaining="354" etc="1375672857"/>
+<taskprogress task="NSE" time="1375672533" percent="8.06" remaining="696" etc="1375673229"/>
+<taskprogress task="NSE" time="1375672563" percent="8.14" remaining="1028" etc="1375673590"/>
+<taskprogress task="NSE" time="1375672593" percent="8.14" remaining="1366" etc="1375673959"/>
+<taskprogress task="NSE" time="1375672623" percent="8.14" remaining="1705" etc="1375674328"/>
+<taskprogress task="NSE" time="1375672653" percent="8.14" remaining="2044" etc="1375674696"/>
+<taskprogress task="NSE" time="1375672683" percent="8.14" remaining="2382" etc="1375675065"/>
+<taskprogress task="NSE" time="1375672713" percent="8.14" remaining="2721" etc="1375675434"/>
+<taskprogress task="NSE" time="1375672743" percent="8.14" remaining="3060" etc="1375675802"/>
+<taskprogress task="NSE" time="1375672773" percent="8.14" remaining="3398" etc="1375676171"/>
+<taskprogress task="NSE" time="1375672803" percent="8.14" remaining="3737" etc="1375676539"/>
+<taskprogress task="NSE" time="1375672833" percent="8.14" remaining="4076" etc="1375676908"/>
+<taskprogress task="NSE" time="1375672863" percent="8.14" remaining="4414" etc="1375677277"/>
+<taskprogress task="NSE" time="1375672893" percent="8.14" remaining="4753" etc="1375677645"/>
+<taskprogress task="NSE" time="1375672923" percent="8.14" remaining="5092" etc="1375678014"/>
+<taskprogress task="NSE" time="1375672953" percent="8.14" remaining="5430" etc="1375678383"/>
+<taskprogress task="NSE" time="1375672986" percent="8.22" remaining="5743" etc="1375678728"/>
+<taskprogress task="NSE" time="1375673022" percent="8.29" remaining="6082" etc="1375679103"/>
+<taskprogress task="NSE" time="1375673052" percent="8.29" remaining="6413" etc="1375679465"/>
+<taskprogress task="NSE" time="1375673085" percent="8.29" remaining="6778" etc="1375679863"/>
+<taskprogress task="NSE" time="1375673121" percent="8.29" remaining="7176" etc="1375680297"/>
+<taskprogress task="NSE" time="1375673157" percent="8.29" remaining="7574" etc="1375680731"/>
+<taskprogress task="NSE" time="1375673196" percent="8.29" remaining="8005" etc="1375681201"/>
+<taskprogress task="NSE" time="1375673238" percent="8.29" remaining="8470" etc="1375681707"/>
+<taskprogress task="NSE" time="1375673280" percent="8.29" remaining="8934" etc="1375682214"/>
+<taskprogress task="NSE" time="1375673325" percent="8.29" remaining="9432" etc="1375682756"/>
+<taskprogress task="NSE" time="1375673373" percent="8.29" remaining="9963" etc="1375683335"/>
+<taskprogress task="NSE" time="1375673424" percent="8.29" remaining="10526" etc="1375683950"/>
+<taskprogress task="NSE" time="1375673478" percent="8.29" remaining="11123" etc="1375684601"/>
+<taskprogress task="NSE" time="1375673535" percent="8.29" remaining="11754" etc="1375685288"/>
+<taskprogress task="NSE" time="1375673595" percent="8.29" remaining="12417" etc="1375686012"/>
+<taskprogress task="NSE" time="1375673658" percent="8.29" remaining="13114" etc="1375686771"/>
+<taskprogress task="NSE" time="1375673724" percent="8.29" remaining="13843" etc="1375687567"/>
+<taskprogress task="NSE" time="1375673793" percent="8.29" remaining="14606" etc="1375688399"/>
+<taskprogress task="NSE" time="1375673868" percent="8.29" remaining="15436" etc="1375689303"/>
+<taskprogress task="NSE" time="1375673946" percent="8.29" remaining="16298" etc="1375690243"/>
+<taskprogress task="NSE" time="1375674027" percent="8.29" remaining="17194" etc="1375691220"/>
+<taskprogress task="NSE" time="1375674114" percent="8.29" remaining="18155" etc="1375692269"/>
+<taskprogress task="NSE" time="1375674204" percent="8.29" remaining="19151" etc="1375693354"/>
+<taskprogress task="NSE" time="1375674285" percent="5.48" remaining="31271" etc="1375705556"/>
+<taskprogress task="NSE" time="1375674315" percent="5.92" remaining="29297" etc="1375703612"/>
+<taskprogress task="NSE" time="1375674378" percent="6.71" remaining="26510" etc="1375700888"/>
+<taskprogress task="NSE" time="1375674408" percent="7.28" remaining="24667" etc="1375699075"/>
+<taskprogress task="NSE" time="1375674504" percent="8.09" remaining="23099" etc="1375697603"/>
+<taskprogress task="NSE" time="1375674696" percent="9.29" remaining="21721" etc="1375696416"/>
+<taskprogress task="NSE" time="1375674891" percent="10.61" remaining="20385" etc="1375695276"/>
+<taskprogress task="NSE" time="1375675089" percent="12.23" remaining="18777" etc="1375693866"/>
+<taskprogress task="NSE" time="1375675215" percent="13.42" remaining="17704" etc="1375692918"/>
+<taskprogress task="NSE" time="1375675383" percent="14.86" remaining="16681" etc="1375692063"/>
+<taskprogress task="NSE" time="1375675584" percent="16.63" remaining="15600" etc="1375691183"/>
+<taskprogress task="NSE" time="1375675986" percent="19.35" remaining="14648" etc="1375690634"/>
+<taskprogress task="NSE" time="1375676094" percent="22.22" remaining="12678" etc="1375688771"/>
+<taskprogress task="NSE" time="1375676124" percent="31.35" remaining="7999" etc="1375684123"/>
+<taskprogress task="NSE" time="1375676154" percent="39.33" remaining="5681" etc="1375681835"/>
+<taskprogress task="NSE" time="1375676265" percent="42.16" remaining="5203" etc="1375681468"/>
+<taskprogress task="NSE" time="1375676373" percent="45.17" remaining="4736" etc="1375681109"/>
+<taskprogress task="NSE" time="1375676430" percent="50.25" remaining="3920" etc="1375680349"/>
+<taskprogress task="NSE" time="1375676460" percent="55.69" remaining="3173" etc="1375679633"/>
+<taskprogress task="NSE" time="1375676691" percent="60.44" remaining="2762" etc="1375679453"/>
+<taskprogress task="NSE" time="1375676733" percent="63.89" remaining="2409" etc="1375679142"/>
+<taskprogress task="NSE" time="1375676763" percent="68.82" remaining="1945" etc="1375678707"/>
+<taskprogress task="NSE" time="1375677006" percent="73.73" remaining="1616" etc="1375678622"/>
+<taskprogress task="NSE" time="1375677036" percent="80.59" remaining="1100" etc="1375678135"/>
+<taskprogress task="NSE" time="1375677111" percent="85.09" remaining="813" etc="1375677924"/>
+<taskprogress task="NSE" time="1375677327" percent="90.28" remaining="523" etc="1375677850"/>
+<taskend task="NSE" time="1375677646"/>
+<taskbegin task="NSE" time="1375677646"/>
+<taskend task="NSE" time="1375677647"/>
+<host starttime="1375671651" endtime="1375677647"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.4" addrtype="ipv4"/>
+<address addr="10:40:F3:95:4F:5E" addrtype="mac" vendor="Apple"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65524">
+<extrareasons reason="resets" count="65524"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="5.9" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:5.9</cpe></service><script id="banner" output="SSH-2.0-OpenSSH_5.9"/><script id="ssh-hostkey" output="1024 cc:28:a8:8a:3a:e0:2c:5b:87:d1:db:a2:7d:ad:cc:3b (DSA)&#xa;2048 f6:7d:65:49:75:33:90:20:24:4b:67:e3:d6:5d:23:61 (RSA)"><table>
+<elem key="bits">1024</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBALzTjlSd98eBwZBaSi8asgY/NIND58sU9z7oN9qnpWPtssGXdyGZpP9u7+Z8AuPmHaFqUN7F/ZFCMuq59sJk74CPJviCvsca8jIrVp+r6DEfGw20E+0SuqEyKR+O6fFsg2OGGHqBbvRNvO2NzJiwZDchjIhBwEkgu5dCNWxV/DhzAAAAFQC26VX8KmdGm0oP71T+UEf/i7/ZvwAAAIBWETMXSF+cnz+LpepuN3OIrqZ2xQQLx0xOPi8oyXyoW5L7GAsXLvv/B0Rz+nB/bXFWkSijqFBBVkuX1b0CGTOn1GqNFhC1KFylXZaZuCj1DAwzL+7jUlPgNCAa6qgBifSKjnOZRqOb+0WfcMD1KMq6ZE5KXxAiabZRvun1FV7kvAAAAIBNxwufmsNPxlZlyYyNyrK5XvHz16XVsSTMrfw2c6lT/2vTuZGz8P7mUy6JpFrzcV2tahUy+gzhzJhhlAtsG+SKZAH366BaCu78seroMvqVsB+ihMWgpHq+AlyUwiCLMFM4uLIzcAEJNzagAn+OyGUfAi992tjsAPyP94qAiEMueQ==</elem>
+<elem key="fingerprint">cc28a88a3ae02c5b87d1dba27dadcc3b</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDQfGB9UuxkPFa06sEcKXi2RlUyhxz14EiqCsY9pwD8LUHfHkaEMSyZNNOmdjCIzwFYzYQSt7OV1dKJlzajp7dHueEdA46O0+l/znrY5dMGM/UX8fic77cA85mgBpUqQQ3U1IdVh6JeK8RghJinemtH0KG8wsPtudcLu6xrY992m8bOt+BDxSfR3aPZR1NaX++SAFaTleKNvA5oNNjTN7XQ5LT+ppbeNcNWSQcnphWs4psLtA4m9aMsN25UlDgqGoo8lNIU4XKss2j3q1zRk4k1KnrQ8alAF2xmza4HFAf0mx/Wk7mmcuapyqVhu1qY2Hm/pV7i3uvdc/slh+7sm5Xh</elem>
+<elem key="fingerprint">f67d654975339020244b67e3d65d2361</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+</script><script id="ssh2-enum-algos" output="&#xa;  kex_algorithms (4)&#xa;      diffie-hellman-group-exchange-sha256&#xa;      diffie-hellman-group-exchange-sha1&#xa;      diffie-hellman-group14-sha1&#xa;      diffie-hellman-group1-sha1&#xa;  server_host_key_algorithms (2)&#xa;      ssh-rsa&#xa;      ssh-dss&#xa;  encryption_algorithms (13)&#xa;      aes128-ctr&#xa;      aes192-ctr&#xa;      aes256-ctr&#xa;      arcfour256&#xa;      arcfour128&#xa;      aes128-cbc&#xa;      3des-cbc&#xa;      blowfish-cbc&#xa;      cast128-cbc&#xa;      aes192-cbc&#xa;      aes256-cbc&#xa;      arcfour&#xa;      rijndael-cbc@lysator.liu.se&#xa;  mac_algorithms (11)&#xa;      hmac-md5&#xa;      hmac-sha1&#xa;      umac-64@openssh.com&#xa;      hmac-sha2-256&#xa;      hmac-sha2-256-96&#xa;      hmac-sha2-512&#xa;      hmac-sha2-512-96&#xa;      hmac-ripemd160&#xa;      hmac-ripemd160@openssh.com&#xa;      hmac-sha1-96&#xa;      hmac-md5-96&#xa;  compression_algorithms (2)&#xa;      none&#xa;      zlib@openssh.com&#xa;"/></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="kerberos-sec" product="Heimdal Kerberos" extrainfo="server time: 2013-08-05 11:59:27Z" method="probed" conf="10"><cpe>cpe:/a:heimdal:kerberos</cpe></service><script id="krb5-enum-users" output="ERROR: No Kerberos REALM was supplied, aborting ..."/></port>
+<port protocol="tcp" portid="548"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="afp" product="Apple AFP" extrainfo="name: nishimura-no-MacBook-Pro.local; protocol 3.4; Mac OS X 10.6; MacBook Pro" ostype="Mac OS X" method="probed" conf="10"><cpe>cpe:/a:apple:afp_server</cpe><cpe>cpe:/o:apple:mac_os_x:10.6</cpe></service><script id="afp-ls" output="&#xa;  \xE8\xA5\xBF\xE6\x9D\x91 \xE7\xA4\xBC\xE6\x81\xA9 \xE3\x81\xAE\xE3\x83\x91\xE3\x83\x96\xE3\x83\xAA\xE3\x83\x83\xE3\x82\xAF\xE3\x83\x95\xE3\x82\xA9\xE3\x83\xAB\xE3\x83\x80&#xa;    PERMISSION  UID  GID  SIZE  TIME              FILENAME&#xa;    -rw-r-&#45;r-&#45;  501  20   6148  2012-09-03 17:55  .DS_Store&#xa;    -rw-r-&#45;r-&#45;  501  20   0     2009-07-23 13:00  .localized&#xa;    drwx-wx-wx  501  20   0     2011-11-18 16:15  Drop Box&#xa;  &#xa;  Information retrieved as: nil&#xa;  Output restricted to 10 entries per volume. (See afp-ls.maxfiles)&#xa;"/><script id="afp-serverinfo" output="&#xa;  | Server Flags: 0x9ffb&#xa;  |   Super Client: Yes&#xa;  |   UUIDs: Yes&#xa;  |   UTF8 Server Name: Yes&#xa;  |   Open Directory: Yes&#xa;  |   Reconnect: Yes&#xa;  |   Server Notifications: Yes&#xa;  |   TCP/IP: Yes&#xa;  |   Server Signature: Yes&#xa;  |   ServerMessages: Yes&#xa;  |   Password Saving Prohibited: No&#xa;  |   Password Changing: Yes&#xa;  |_  Copy File: Yes&#xa;  Server Name: nishimura-no-MacBook-Pro.local&#xa;  Machine Type: MacBookPro8,1&#xa;  AFP Versions: AFP3.4, AFP3.3, AFP3.2, AFP3.1, AFPX03&#xa;  UAMs: DHCAST128, DHX2, Recon1, Client Krb v2, GSS, No User Authent&#xa;  Server Signature: 060607ff0fa4506ba6c1c6ea3f0163cd&#xa;  Network Address 1: 192.168.1.4:548&#xa;  Network Address 2: 172.16.1.1:548&#xa;  Network Address 3: 172.16.247.1:548&#xa;  Network Address 4: [fe80:0000:0000:0000:1240:f3ff:fe95:4f5e]:548&#xa;  Network Address 5: [2001:a450:2122:ca00:1240:f3ff:fe95:4f5e]:548&#xa;  Network Address 6: [2001:a450:2122:ca00:3859:0e4d:ddeb:4ab3]:548&#xa;  Network Address 7: [fe80:0000:0000:0000:0c8b:70df:841c:0c7a]:548&#xa;  Network Address 8: [fd06:f14f:f72c:355f:0c8b:70df:841c:0c7a]:548&#xa;  Network Address 9: 192.168.1.4&#xa;  Directory Name 1: host/nishimura-no-macbook-pro.local@LOCAL&#xa;  UTF8 Server Name: nishimura-no-MacBook-Pro.local&#xa;"/><script id="afp-showmount" output="&#xa;  \xE8\xA5\xBF\xE6\x9D\x91 \xE7\xA4\xBC\xE6\x81\xA9 \xE3\x81\xAE\xE3\x83\x91\xE3\x83\x96\xE3\x83\xAA\xE3\x83\x83\xE3\x82\xAF\xE3\x83\x95\xE3\x82\xA9\xE3\x83\xAB\xE3\x83\x80&#xa;    Owner: Search,Read,Write&#xa;    Group: Search,Read&#xa;    Everyone: Search,Read&#xa;    User: Search,Read&#xa;"/></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ipp" product="CUPS" version="1.6" method="probed" conf="10"/><script id="cups-info" output="ERROR: Script execution failed (use -d to debug)"/><script id="cups-queue-info" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-chrono" output="Request times for /; avg: 16073.96ms; min: 16041.48ms; max: 16126.66ms"/><script id="http-config-backup" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-default-accounts" output="false">false</script><script id="http-favicon" output="Unknown favicon MD5: 25DBB6B3FE93B0692EEB4F9DCE4FB1BA"/><script id="http-frontpage-login" output="false">false</script><script id="http-google-malware" output="[ERROR] No API key found. Update the variable APIKEY in http-google-malware or set it in the argument http-google-malware.api"/><script id="http-grep" output="&#xa;  ERROR: Argument http-grep.match was not set&#xa;"/><script id="http-headers" output="&#xa;  Date: Mon, 05 Aug 2013 12:01:19 GMT&#xa;  Server: CUPS/1.6 IPP/2.1&#xa;  Content-Language: ja&#xa;  Content-Type: HEAD / HTTP/1.1&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-huawei-hg5xx-vuln" output="false">false</script><script id="http-iis-webdav-vuln" output="ERROR: This web server is not supported."/><script id="http-malware-host" output="false">false</script><script id="http-slowloris" output="false">false</script><script id="http-vhosts" output="&#xa;17 names had status ERROR&#xa;11 names had status 400"/><script id="http-vuln-cve2011-3368" output="&#xa;  ERROR: Got no answers from pipelined queries"/><script id="http-waf-detect" output="IDS/IPS/WAF detected:&#xa;192.168.1.4:631/?p4yl04d=../../../../../../../../../../../../../../../../../etc/passwd"/></port>
+<port protocol="tcp" portid="3031"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="appleevents" product="Apple Remote Events" ostype="Mac OS X" method="probed" conf="10"><cpe>cpe:/o:apple:mac_os_x</cpe></service><script id="eppc-enum-processes" output="ERROR: Script execution failed (use -d to debug)"/><script id="unusual-port" output="appleevents unexpected on port tcp/3031"/></port>
+<port protocol="tcp" portid="3689"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="daap" product="Apple iTunes DAAP" version="11.0.4" ostype="OS X" method="probed" conf="10"/><script id="unusual-port" output="daap unexpected on port tcp/3689"/></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="upnp" servicefp="SF-Port5000-TCP:V=6.25%I=7%D=8/4%Time=51FF182A%P=i686-pc-linux-gnu%r(GenericLines,65,&quot;\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(GetRequest,73,&quot;GET\x20/\x20HTTP/1\.0\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(RTSPRequest,77,&quot;OPTIONS\x20/\x20RTSP/1\.0\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(HTTPOptions,77,&quot;OPTIONS\x20/\x20HTTP/1\.0\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(Help,69,&quot;HELP\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(SSLSessionReq,BA,&quot;\x16\x03\0\0S\x01\0\0O\x03\0\?G\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd,\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd`~\xef\xbf\xbd\0\xef\xbf\xbd\xef\xbf\xbd{\xef\xbf\xbd\xd5\x96\xef\xbf\xbdw\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd&lt;=\xef\xbf\xbdo\xef\xbf\xbd\x10n\0\0\(\0\x16\0\x13\0\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(Kerberos,80,&quot;\0\0\0qj\xef\xbf\xbdn0\xef\xbf\xbdk\xef\xbf\xbd\x03\x02\x01\x05\xef\xbf\xbd\x03\x02\x01\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(FourOhFourRequest,96,&quot;GET\x20/nice%20ports%2C/Tri%6Eity\.txt%2ebak\x20HTTP/1\.0\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(LPDString,6D,&quot;\x01default\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;)%r(SIPOptions,7B,&quot;OPTIONS\x20sip:nm\x20SIP/2\.0\nApple\x20SDK\x20developer\x20root:\x20/Applications/Xcode\.app/Contents/Developer\nServer\x20IP\x20Address\x20:\x20172\.16\.1\.1\n&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc" product="Apple remote desktop vnc" ostype="Mac OS X" method="probed" conf="10"><cpe>cpe:/o:apple:mac_os_x</cpe></service><script id="banner" output="RFB 003.889"/><script id="vnc-info" output="&#xa;  Protocol version: 3.889&#xa;  Security types:&#xa;    Mac OS X security type (30)&#xa;    Mac OS X security type (35)&#xa;"/></port>
+<port protocol="tcp" portid="17500"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="db-lsp" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2013-08-05T13:17:58+00:00; +8h46m45s from local time."><elem key="delta">31605</elem>
+<elem key="date">2013-08-05T13:17:58+00:00</elem>
+</script><script id="ssl-enum-ciphers" output="&#xa;  SSLv3: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA - strong&#xa;      TLS_DHE_RSA_WITH_AES_128_CBC_SHA - strong&#xa;      TLS_DHE_RSA_WITH_AES_256_CBC_SHA - strong&#xa;      TLS_RSA_WITH_3DES_EDE_CBC_SHA - strong&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA - strong&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA - strong&#xa;    compressors: &#xa;      NULL&#xa;  TLSv1.0: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA - strong&#xa;      TLS_DHE_RSA_WITH_AES_128_CBC_SHA - strong&#xa;      TLS_DHE_RSA_WITH_AES_256_CBC_SHA - strong&#xa;      TLS_RSA_WITH_3DES_EDE_CBC_SHA - strong&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA - strong&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA - strong&#xa;    compressors: &#xa;      NULL&#xa;  least strength: strong"><table key="SSLv3">
+<table key="ciphers">
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_RSA_WITH_3DES_EDE_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+</table>
+<table key="TLSv1.0">
+<table key="ciphers">
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_RSA_WITH_3DES_EDE_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="strength">strong</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+</table>
+<elem key="least strength">strong</elem>
+</script><script id="sslv2" output="server supports SSLv2 protocol, but no SSLv2 cyphers&#xa;"/></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apple ODS DVD/CD Sharing Agent httpd" version="1.0" method="probed" conf="10"/><script id="http-auth" output="&#xa;HTTP/1.1 401 Unauthorized&#xd;&#xa;  Digest nonce=3e98132f600104612dc4cf31da141888 realm=ODS&#xa;"><table>
+<table key="params">
+<elem key="nonce">3e98132f600104612dc4cf31da141888</elem>
+<elem key="realm">ODS</elem>
+</table>
+<elem key="scheme">Digest</elem>
+</table>
+</script><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.4&#xa;  url                        method&#xa;  http://192.168.1.4:49152/  HTTP: Digest&#xa;"/><script id="http-brute" output="&#xa;  Accounts&#xa;    No valid accounts found&#xa;  Statistics&#xa;    Performed 0 guesses in 4744 seconds, average tps: 0&#xa;"/><script id="http-chrono" output="Request times for /; avg: 156.69ms; min: 152.92ms; max: 159.04ms"/><script id="http-date" output="Mon, 05 Aug 2013 12:01:19 GMT; +8h46m47s from local time."><elem key="date">2013-08-05T12:01:19+00:00</elem>
+<elem key="delta">31607</elem>
+</script><script id="http-domino-enum-passwords" output="  &#xa;  ERROR: No credentials supplied (see domino-enum-passwords.username and domino-enum-passwords.password)"/><script id="http-drupal-modules" output="&#xa;"></script><script id="http-form-brute" output="&#xa;  ERROR: No passvar was specified (see http-form-brute.passvar)"/><script id="http-frontpage-login" output="false">false</script><script id="http-google-malware" output="[ERROR] No API key found. Update the variable APIKEY in http-google-malware or set it in the argument http-google-malware.api"/><script id="http-grep" output="&#xa;  ERROR: Argument http-grep.match was not set&#xa;"/><script id="http-headers" output="&#xa;  Server: ODS/1.0&#xa;  Date: Mon, 05 Aug 2013 13:22:23 GMT&#xa;  Content-Length: 0&#xa;  WWW-Authenticate: Digest realm=&quot;ODS&quot; nonce=&quot;659723a17daadf2ef0b5ca01c747c4d6&quot;&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-iis-webdav-vuln" output="WebDAV is DISABLED. Server is not currently vulnerable."/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-method-tamper" output="&#xa;  VULNERABLE:&#xa;  Authentication bypass by HTTP verb tampering&#xa;    State: VULNERABLE (Exploitable)&#xa;    Description:&#xa;      This web server contains password protected resources vulnerable to authentication bypass &#xa;      vulnerabilities via HTTP verb tampering. This is often found in web servers that only limit access to the&#xa;       common HTTP methods and in misconfigured .htaccess files.&#xa;             &#xa;    Extra information:&#xa;      &#xa;  URIs suspected to be vulnerable to HTTP verb tampering:&#xa;    / [POST]&#xa;  &#xa;    References:&#xa;      http://capec.mitre.org/data/definitions/274.html&#xa;      https://www.owasp.org/index.php/Testing_for_HTTP_Methods_and_XST_%28OWASP-CM-008%29&#xa;      http://www.mkit.com.ar/labs/htexploit/&#xa;      http://www.imperva.com/resources/glossary/http_verb_tampering.html&#xa;"/><script id="http-methods" output="No Allow or Public header in OPTIONS response (status code 501)"/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    &#xa;"/><script id="http-slowloris" output="false">false</script><script id="http-slowloris-check" output="&#xa;  VULNERABLE:&#xa;  Slowloris DOS attack&#xa;    State: VULNERABLE&#xa;    Description:&#xa;      Slowloris tries to keep many connections to the target web server open and hold them open as long as possible.&#xa;      It accomplishes this by opening connections to the target web server and sending a partial request. By doing &#xa;      so, it starves the http server&apos;s resources causing Denial Of Service. &#xa;      &#x9;&#x9;&#xa;    Disclosure date: 2009-09-17&#xa;    References:&#xa;      http://ha.ckers.org/slowloris/&#xa;"/><script id="http-title" output="Site doesn&apos;t have a title."><elem key="title">nil</elem>
+<elem key="redirect_url">nil</elem>
+</script><script id="http-traceroute" output="&#xa;  Possible reverse proxy detected.&#xa;"/><script id="http-vhosts" output="&#xa;28 names had status 401"/><script id="http-wordpress-plugins" output="nothing found amongst the 100 most popular plugins, use -&#45;script-args http-wordpress-plugins.search=&lt;number|all&gt; for deeper analysis)&#xa;"/></port>
+<port protocol="tcp" portid="57890"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="skype2" product="Skype" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="36326"/>
+<osmatch name="Apple Mac OS X 10.8.0 - 10.8.2 (Mountain Lion) or iOS 4.4.2 - 6.0.0 (Darwin 11.0.0 - 12.2.0)" accuracy="100" line="3119">
+<osclass type="media device" vendor="Apple" osfamily="iOS" osgen="4.X" accuracy="100"><cpe>cpe:/o:apple:iphone_os:4</cpe><cpe>cpe:/a:apple:apple_tv:4</cpe></osclass>
+<osclass type="phone" vendor="Apple" osfamily="iOS" osgen="4.X" accuracy="100"><cpe>cpe:/o:apple:iphone_os:4</cpe></osclass>
+<osclass type="media device" vendor="Apple" osfamily="iOS" osgen="5.X" accuracy="100"><cpe>cpe:/o:apple:iphone_os:5</cpe></osclass>
+<osclass type="phone" vendor="Apple" osfamily="iOS" osgen="5.X" accuracy="100"><cpe>cpe:/o:apple:iphone_os:5</cpe></osclass>
+<osclass type="media device" vendor="Apple" osfamily="iOS" osgen="6.X" accuracy="100"><cpe>cpe:/o:apple:iphone_os:6</cpe></osclass>
+<osclass type="phone" vendor="Apple" osfamily="iOS" osgen="6.X" accuracy="100"><cpe>cpe:/o:apple:iphone_os:6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="1204233" lastboot="Mon Jul 22 02:10:14 2013"/>
+<distance value="1"/>
+<tcpsequence index="255" difficulty="Good luck!" values="37D32F5A,22B56922,660EE4F2,3D45093C,6B3119B0,62A4B658"/>
+<ipidsequence class="Randomized" values="49B9,53AD,D9C8,A3E1,1B89,6BB8"/>
+<tcptssequence class="1000HZ" values="477822CA,4778232D,47782391,477823F5,47782459,477824BD"/>
+<hostscript><script id="dns-blacklist" output="&#xa;  PROXY&#xa;    http.dnsbl.sorbs.net - FAIL&#xa;  SPAM&#xa;    dnsbl.ahbl.org - FAIL&#xa;    dnsbl.inps.de - FAIL&#xa;    sbl.spamhaus.org - FAIL&#xa;    spam.dnsbl.sorbs.net - FAIL&#xa;    bl.nszones.com - FAIL&#xa;    bl.spamcop.net - FAIL&#xa;    l2.apews.org - FAIL&#xa;    all.spamrats.com - FAIL&#xa;"/><script id="dns-brute" output="Can&apos;t guess domain of &quot;192.168.1.4&quot;; use dns-brute.domain script argument."/><script id="firewall-bypass" output="false">false</script><script id="ipidseq" output="Randomized"/><script id="path-mtu" output="PMTU == 1492"/><script id="qscan" output="&#xa;PORT  FAMILY  MEAN (us)  STDDEV   LOSS (%)&#xa;1     0       242.00     29.29    0.0%&#xa;22    1       556.90     338.89   0.0%&#xa;88    1       1203.40    1273.33  0.0%&#xa;548   0       827.10     1220.22  0.0%&#xa;631   0       970.90     1465.76  0.0%&#xa;3031  1       1004.90    1022.85  0.0%&#xa;3689  1       531.80     142.37   0.0%&#xa;5000  1       454.20     179.43   0.0%&#xa;5900  0       769.00     1155.89  0.0%&#xa;"/><script id="sniffer-detect" output="Likely in promiscuous mode (tests: &quot;11111111&quot;)"/></hostscript><times srtt="506" rttvar="547" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1375677647"/>
+<taskend task="NSE" time="1375677647"/>
+<taskbegin task="NSE" time="1375677647"/>
+<taskend task="NSE" time="1375677647"/>
+<postscript><script id="reverse-index" output="&#xa;  22/tcp: 192.168.1.4&#xa;  88/tcp: 192.168.1.4&#xa;  548/tcp: 192.168.1.4&#xa;  631/tcp: 192.168.1.4&#xa;  3031/tcp: 192.168.1.4&#xa;  3689/tcp: 192.168.1.4&#xa;  5000/tcp: 192.168.1.4&#xa;  5900/tcp: 192.168.1.4&#xa;  17500/tcp: 192.168.1.4&#xa;  49152/tcp: 192.168.1.4&#xa;  57890/tcp: 192.168.1.4&#xa;"/></postscript><runstats><finished time="1375677647" timestr="Mon Aug  5 00:40:47 2013" elapsed="6037.49" summary="Nmap done at Mon Aug  5 00:40:47 2013; 1 IP address (1 host up) scanned in 6037.49 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
