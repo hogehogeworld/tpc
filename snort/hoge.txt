@@ -1,0 +1,141 @@
+Running in IDS mode
+
+        --== Initializing Snort ==--
+Initializing Output Plugins!
+Initializing Preprocessors!
+Initializing Plug-ins!
+Parsing Rules file "snort.conf"
+PortVar 'HTTP_PORTS' defined :  [ 80 ]
+PortVar 'SHELLCODE_PORTS' defined :  [ 0:79 81:65535 ]
+PortVar 'ORACLE_PORTS' defined :  [ 1521 ]
+PortVar 'FTP_PORTS' defined :  [ 21 ]
+Tagged Packet Limit: 256
+Loading dynamic engine /usr/lib/snort_dynamicengine/libsf_engine.so... done
+Loading all dynamic preprocessor libs from /usr/lib/snort_dynamicpreprocessor/...
+  Loading dynamic preprocessor library /usr/lib/snort_dynamicpreprocessor//libsf_smtp_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort_dynamicpreprocessor//libsf_dcerpc_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort_dynamicpreprocessor//libsf_ssh_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort_dynamicpreprocessor//libsf_dce2_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort_dynamicpreprocessor//libsf_dns_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort_dynamicpreprocessor//libsf_ssl_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort_dynamicpreprocessor//lib_sfdynamic_preprocessor_example.so... done
+  Loading dynamic preprocessor library /usr/lib/snort_dynamicpreprocessor//libsf_ftptelnet_preproc.so... done
+  Finished Loading all dynamic preprocessor libs from /usr/lib/snort_dynamicpreprocessor/
+Log directory = /var/log/snort
+Frag3 global config:
+    Max frags: 65536
+    Fragment memory cap: 4194304 bytes
+Frag3 engine config:
+    Bound Address: default
+    Target-based policy: FIRST
+    Fragment timeout: 60 seconds
+    Fragment min_ttl:   1
+    Fragment Anomalies: Alert
+    Overlap Limit:     10
+    Min fragment Length:     0
+Stream5 global config:
+    Track TCP sessions: ACTIVE
+    Max TCP sessions: 8192
+    Memcap (for reassembly packet storage): 8388608
+    Track UDP sessions: INACTIVE
+    Track ICMP sessions: INACTIVE
+    Track IP sessions: INACTIVE
+    Log info if session memory consumption exceeds 1048576
+    Send up to 0 active responses
+    Protocol Aware Flushing: ACTIVE
+        Maximum Flush Point: 16384
+Stream5 TCP Policy config:
+    Bound Address: default
+    Reassembly Policy: FIRST
+    Timeout: 30 seconds
+    Maximum number of bytes to queue per session: 1048576
+    Maximum number of segs to queue per session: 2621
+    Reassembly Ports:
+      21 client (Footprint) 
+      23 client (Footprint) 
+      25 client (Footprint) 
+      42 client (Footprint) 
+      53 client (Footprint) 
+      80 client (Footprint) 
+      110 client (Footprint) 
+      111 client (Footprint) 
+      135 client (Footprint) 
+      136 client (Footprint) 
+      137 client (Footprint) 
+      139 client (Footprint) 
+      143 client (Footprint) 
+      445 client (Footprint) 
+      513 client (Footprint) 
+      514 client (Footprint) 
+      1433 client (Footprint) 
+      1521 client (Footprint) 
+      2401 client (Footprint) 
+      3306 client (Footprint) 
+HttpInspect Config:
+    GLOBAL CONFIG
+      Max Pipeline Requests:    0
+      Inspection Type:          STATELESS
+      Detect Proxy Usage:       NO
+      IIS Unicode Map Filename: ./unicode.map
+      IIS Unicode Map Codepage: 1252
+      Memcap used for logging URI and Hostname: 150994944
+      Max Gzip Memory: 838860
+      Max Gzip Sessions: 9532
+      Gzip Compress Depth: 1460
+      Gzip Decompress Depth: 2920
+    DEFAULT SERVER CONFIG:
+      Server profile: All
+      Ports (PAF): 80 8080 8180 
+      Server Flow Depth: 300
+      Client Flow Depth: 300
+      Max Chunk Length: 500000
+      Max Header Field Length: 0
+      Max Number Header Fields: 0
+      Max Number of WhiteSpaces allowed with header folding: 200
+      Inspect Pipeline Requests: YES
+      URI Discovery Strict Mode: NO
+      Allow Proxy Usage: NO
+      Disable Alerting: NO
+      Oversize Dir Length: 500
+      Only inspect URI: NO
+      Normalize HTTP Headers: NO
+      Inspect HTTP Cookies: NO
+      Inspect HTTP Responses: NO
+      Extract Gzip from responses: NO
+      Unlimited decompression of gzip data from responses: NO
+      Normalize Javascripts in HTTP Responses: NO
+      Normalize HTTP Cookies: NO
+      Enable XFF and True Client IP: NO
+      Log HTTP URI data: NO
+      Log HTTP Hostname data: NO
+      Extended ASCII code support in URI: NO
+      Ascii: YES alert: NO
+      Double Decoding: YES alert: YES
+      %U Encoding: YES alert: YES
+      Bare Byte: YES alert: YES
+      UTF 8: OFF
+      IIS Unicode: YES alert: YES
+      Multiple Slash: YES alert: NO
+      IIS Backslash: YES alert: NO
+      Directory Traversal: YES alert: NO
+      Web Root Traversal: YES alert: YES
+      Apache WhiteSpace: YES alert: NO
+      IIS Delimiter: YES alert: NO
+      IIS Unicode Map: GLOBAL IIS UNICODE MAP CONFIG
+      Non-RFC Compliant Characters: NONE
+      Whitespace Characters: 0x09 0x0b 0x0c 0x0d 
+rpc_decode arguments:
+    Ports to decode RPC on: 111 32771 
+    alert_fragments: INACTIVE
+    alert_large_fragments: ACTIVE
+    alert_incomplete: ACTIVE
+    alert_multiple_requests: ACTIVE
+Portscan Detection Config:
+    Detect Protocols:  TCP UDP ICMP IP
+    Detect Scan Type:  portscan portsweep decoy_portscan distributed_portscan
+    Sensitivity Level: Low
+    Memcap (in bytes): 10000000
+    Number of Nodes:   19569
+ERROR: Failed to initialize dynamic preprocessor: SF_FTPTELNET version 1.2.12 (-1)
+Fatal Error, Quitting..
+
